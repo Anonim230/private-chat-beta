@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.chat {
+    margin: 0 auto;
+    font-family: sans-serif;
+    padding: 0 auto;
+}
+
+.chat form label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.chat form input {
+    display: block;
+    padding: 5px 20px;
+    margin: 12px 0;
+}
+
+.chat form input[type="submit"] {
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 2px double blue;
+}
+
+.me {
+    color: gold;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+h5 {
+    position: relative;
+    box-sizing: content-box;
+}
+
+.modal {
+    width: 30vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 75%;
+    transform: translate(-50%);
+    color: red;
+    background-color: blue;
+}
+
+.badged::before {
+    position: absolute;
+    content: attr(aria-messages);
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    padding-top: 3px;
+    /* padding-right: 3px; */
+    max-width: 10px;
+    max-height: 10px;
+    font-size: 10px;
+    top: -15px;
+    left: -10px;
+}
