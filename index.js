@@ -8,7 +8,8 @@ const db = require('./modules/db');
 // Constants
 
 const app = express()
-const server = app.listen(9000, () => console.log('Server is running on 9000'))
+const port = process.env.PORT || 5000;
+const server = app.listen(port, () => console.log('Server is running on 9000'))
 const io = socketIO(server)
 const DB = new db({
     messages: './database/messages.json',
