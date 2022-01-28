@@ -10,7 +10,8 @@
     "nodemon": "^2.0.15"
   },
   "scripts": {
-    "dev": "nodemon index"
+    "dev": "nodemon index",
+    "start": "node index"
   },
   "name": "private-chat",
   "version": "1.0.0",
